@@ -8,7 +8,6 @@
 
 body {
     background: #fff;
-    padding: 141px 0px 138px 0px;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -16,7 +15,11 @@ body {
 .conteiner {
     max-width: 940px;
     margin: 0 auto;
+<<<<<<< HEAD
     
+=======
+    padding: 141px 0px 138px 0px;
+>>>>>>> homework_5_lesson_7
 }
 /* 
 .conteiner .first-text {
@@ -50,7 +53,7 @@ width: 200px;
 /* box-sizing: border-box; */
 }
 
-h2 {
+.title-text {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -130,12 +133,12 @@ li::after{
     font-size: 18px; 
 } */
 
-ul {
+.center {
     display: inline-block;
     font-size: 0;
 }
 
-li {
+.cards {
     display: inline-block;
     width: 25%;
     margin: 0;
@@ -146,15 +149,17 @@ li {
     box-sizing: border-box;
 }
 
-.svg {
-    height: 60px;
-    text-align: center;
-    margin-bottom: 43px;
-    padding-top: 55px;
+svg{
+    position: relative;
+    height: 71px;
+    margin-bottom: 27px;
+    padding-top: 56px;
+    left: 84px;
+    fill: #1b1b1b;
 }
 
-h3 {
-    height: 45px;
+.cbth {
+    height: 50px;
     font-size: 21px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #1b1b1b;
@@ -167,8 +172,13 @@ h3 {
     font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #777777;
+<<<<<<< HEAD
     padding: 25px 16px;
     padding-bottom: 58px;
+=======
+    padding: 22px 19px;
+    padding-bottom: 80px;
+>>>>>>> homework_5_lesson_7
     text-align: center;
     color: #777777;
     line-height: 22px;
@@ -185,6 +195,7 @@ color:#777777;
 line-height: 22px;
 }
 
+<<<<<<< HEAD
 /* li:hover, .svg:hover, .card-text:hover, h3:hover {
     color: #fff;
     background-color: #0ec8cb;
@@ -205,18 +216,17 @@ line-height: 22px;
 } */
 
 li:hover {
+=======
+.cards:hover {
+>>>>>>> homework_5_lesson_7
     background-color: #0ec8cb;
     border: 1px solid #0ec8cb;
 }
 
-.svg svg {
-    fill: #1b1b1b;
-}
-
-li:hover,
-li:hover h3,
-li:hover .card-text,
-li:hover svg {
+.cards:hover,
+.cards:hover h3,
+.cards:hover .card-text,
+.cards:hover svg {
     fill: #fff;
     color: #ffffff;
 }

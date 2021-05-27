@@ -1,0 +1,73 @@
+@include grid();
+
+.subscribe {
+    background-image: url('../images/sub-to-us-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+
+    &_button {}
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 27px;
+        color: $color-section-subscribe-title;
+
+    }
+
+    &__wrapper_position {
+        margin-top: 117px;
+    }
+
+    &__sub-title {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        color: $color-section-subscribe-sub-title;
+        padding: 27px 185px 0px 0px;
+        margin-bottom: 27px;
+    }
+
+    &__form {}
+
+    &__form-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-input {
+        line-height: 53px;
+        width: 74%;
+        background: rgba(38, 38, 38, 0);
+        border: 1px solid rgb(38, 38, 38);
+        padding: 0px 14px;
+        font-family: Raleway-Light;
+        font-weight: 300;
+        font-size: 16px;
+        color: $color-section-subscribe-to-us-title-and-subtitle;
+        opacity: 0.5;
+    }
+
+    &__button {
+        width: 22%;
+        font-weight: 300;
+        font-size: 20px;
+        color: $color-white;
+        background-color: $color-section-subscribe-to-button-bg;
+    }
+
+    &__form_position {
+        margin-bottom: 133px;
+    }
+}
+
+.container {}
+
+.row {}
+
+.col-8 {}

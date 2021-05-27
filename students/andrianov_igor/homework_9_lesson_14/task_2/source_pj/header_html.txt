@@ -1,0 +1,97 @@
+  <header class="header">
+        <div class="container">
+            <div class="row row_relative">
+                <div class="col-3 col-md-9">
+
+                </div>
+                <div class="col-9 col-md-3">
+                    <nav class="menu">
+                        <input class="menu__iput" type="checkbox" id="burgerMenuBtn">
+                        <label class="menu__burger-btn burger-btn" for="burgerMenuBtn">
+                            <span class="burger-btn__line"></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item_active">
+                                <a href="#" class="menu__link">text</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">text</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">text</a>
+                                <ul class="sub-menu menu__sub-menu">
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">1</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">2</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">3</a>
+                                        <ul class="sub-menu sub-menu__sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">1</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">2</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">3</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">4</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">5</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">6</a>
+                                                <ul class="sub-menu sub-menu__sub-menu">
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">1</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">2</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">3</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">4</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">5</a>
+                                                    </li>
+                                                    <li class="sub-menu__item">
+                                                        <a href="#" class="sub-menu__link">6</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">4</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">5</a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a href="#" class="sub-menu__link">6</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">text</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">text</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">text</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>

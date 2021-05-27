@@ -1,0 +1,36 @@
+@include grid();
+
+.about-us {
+    background-color: $color-section-about-us;
+
+    &__image {
+        display: block;
+        width: 100%;
+        padding: 41px 0px 36px 0px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 27px;
+        color: $color-white;
+        padding: 173px 0px 27px 71px;
+    }
+
+    &__sub-title-top {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        color: $color-white;
+        padding: 18px 0px 0px 71px;
+    }
+
+    &__sub-title-bot {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        color: $color-white;
+        padding: 10px 0px 0px 69px;
+    }
+
+}

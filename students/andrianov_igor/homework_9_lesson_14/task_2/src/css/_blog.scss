@@ -1,0 +1,177 @@
+@include grid();
+
+.blog {
+    background-color: $color-section-blog-bg;
+
+    &__item {
+        position: relative;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__header-title {
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 25px;
+        color: $color-section-blog-header-title-and-subtitle;
+        text-align: center;
+        padding-top: 107px;
+        margin-bottom: 21px;
+    }
+
+    &__header-sub-title {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-section-blog-header-title-and-subtitle;
+        padding: 27px 300px;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.15);
+            width: 370px;
+            height: 310px;
+            opacity: 0;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: opacity 1s cubic-bezier(0.4, 0.72, 0.99, 0.97);
+            cursor: pointer;
+        }
+    }
+
+    &__image {
+        display: block;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    &__date {
+        position: absolute;
+        z-index: 1;
+        width: 58px;
+        height: 58px;
+        border-radius: 5px;
+        background: rgb(38, 38, 38);
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 25px;
+        color: $color-white;
+        transform: translate(54%, 60%);
+        opacity: 0.5;
+
+        span {
+            font-size: 20px;
+            font-weight: 700;
+            font-size: 21px;
+            color: $color-white;
+        }
+    }
+
+    &__title {
+        z-index: 2;
+        position: absolute;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: $color-white;
+        width: 340px;
+        transform: translate(6%, 412%);
+    }
+
+    &__sub-title {
+        position: absolute;
+        width: 330px;
+        font-weight: 700;
+        font-size: 12.5px;
+        line-height: 25px;
+        color: $color-white;
+        transform: translate(6%, 1077%);
+        z-index: 1;
+
+        &::after {
+            content: "";
+            display: block;
+            color: green;
+            font-size: 10px;
+            position: absolute;
+            width: 371px;
+            height: 151px;
+            background-color: blueviolet;
+            transform: translate(-5.5%, -89%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.0) 90%);
+            z-index: -1;
+        }
+    }
+
+    &__item_position {
+        margin-bottom: 23px;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        padding: 15px;
+        width: 200px;
+        background: $color-section-blog-button-bg;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: $color-white;
+
+        &_position {
+            margin-bottom: 89px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .blog__item {
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .blog__header-sub-title {
+        margin: 0px auto;
+        font-size: 12px;
+        padding: 0px;
+        width: calc(100% - 100px);
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blog__header-title {
+        text-align: center;
+        margin-bottom: calc(100% - 520px);
+    }
+}

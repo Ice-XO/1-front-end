@@ -1,0 +1,40 @@
+@include grid();
+
+
+.footer {
+    background-color: $mine-shaft;
+
+    &__wrapper {
+        margin-bottom: 5px;
+    }
+
+    &__right-reserver {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        color: $color-footer-not-love;
+    }
+
+    &__logo {
+        font-family: $font-for-logo-and-footer;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-footer-not-love;
+    }
+
+    &__who-made {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: right;
+        color: $color-footer-not-love;
+    }
+
+    &__link {
+        color: $amaranth;
+        text-decoration: none;
+    }
+}

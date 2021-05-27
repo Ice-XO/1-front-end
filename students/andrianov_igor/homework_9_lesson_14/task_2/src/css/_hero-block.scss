@@ -1,0 +1,88 @@
+@include grid();
+
+.hero-block {
+    height: 100vh;
+    background-image: url('../images/fresh-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    background-origin: content-box;
+    overflow-y: hidden;
+    background-color: $whisper;
+}
+
+.fresh-life {
+    max-width: 400px;
+
+    &_position {
+        padding-top: 213px;
+    }
+
+    &__title {
+        font-family: $font-default-name, $follback;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 25px;
+        color: $mine-shaft;
+        letter-spacing: 0.01em;
+        padding: 0 0 15px;
+    }
+
+    &__title_position {
+        margin-bottom: 19px;
+    }
+
+    &__subtitle {
+        font-family: $font-default-name, $follback;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        text-align: left;
+        color: $mine-shaft;
+    }
+
+    &__subtitle_position {
+        margin-bottom: 29px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 55px;
+        background-color: $orange;
+        font-family: $font-default-name, $follback;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        color: $color-white;
+
+    }
+}
+
+.scroll-to {
+
+    &__link {}
+}
+
+.hero-block {
+
+    &__scroll-to {}
+
+    &__scroll-to-img {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 93.5%;
+        transform: translate(-50%, -50%);
+
+        @include media ("md") {
+            position: relative;
+        }
+
+        @include media ("sm") {
+            position: relative;
+        }
+
+    }
+
+
+}

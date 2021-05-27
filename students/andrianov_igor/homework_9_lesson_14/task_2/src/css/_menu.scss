@@ -1,0 +1,85 @@
+@include grid();
+
+$color-menu-item: $default-color-text;
+$menu-borber: 1px solid $orange;
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 38px;
+
+        &:hover {
+            .menu__link::before {
+                // display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: $default-color-text;
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $orange;
+            left: 0px;
+            top: -8px;
+            // display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+
+        &:hover,
+        &_active {
+            display: block;
+        }
+
+        &__link_active::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $orange;
+            left: 0px;
+            top: -8px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.li {}
+
+
+.menu__link_active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $orange;
+    left: 0px;
+    top: -8px;
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cbd</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+
+<body class="page">
+    <header class="header header_fixed-off" id="header">
+        <div class="header__container container-fluid">
+    
+            <div class="header__row row">
+    
+                <div class="header__col col ">
+                    <input class="menu__hidden" hidden type="checkbox" id="menuBtn">
+                    <label class="menu__hidden_btn" aria-label="button menu" for="menuBtn">
+                        <span class="menu__hidden_btn-line"></span>
+                    </label>
+                    <nav class="header__menu menu">
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <a href="#header-section" class="menu__item-link menu__item-link_position link">HOME</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#projects" class="menu__item-link menu__item-link_position link">PRODUCTS</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#news" class="menu__item-link menu__item-link_position link">FAQS</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts" class="menu__item-link menu__item-link_position link">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+    
+                <div class="header__logo col-4 col-xxl-4 col-xl-3 col-lg-2">
+                    <a class="header__logo-link link" href="#header-section">
+                        <p class="header__logo-title header__logo_position title">CBD</p>
+                    </a>
+                </div>
+    
+    
+                <div class="header__right-side col">
+                    <div class="header__login-wrapper">
+                        <!-- <p class="header__login-text header__login-text_position">LOGIN</p> -->
+                        <div class="header__button-wrapper">
+                            <button class="header__login-button login-button"
+                                onclick="document.getElementById('id01').style.display='block'"
+                                style="width:auto;">Login</button>
+                        </div>
+    
+                        <div id="id01" class="modal">
+    
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                                </div>
+    
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+    
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+    
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <nav class="header__search">
+                        <form class="header__search-form">
+                            <div class="header__search-input-wrapper">
+                                <input class="header__search-input" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                            <div class="header__search-svg-wrapper">
+                                <svg class="header__search-svg" width="19.992" height="20" viewBox="0 0 19.992 20">
+                                    <path
+                                        d="M1694.844,51.98l-4.859-4.86a8.535,8.535,0,1,0-.842.842l4.859,4.86a.6.6,0,0,0,.421.177.584.584,0,0,0,.421-.177A.6.6,0,0,0,1694.844,51.98Zm-18.627-10.452a7.329,7.329,0,1,1,7.329,7.335A7.338,7.338,0,0,1,1676.218,41.528Z"
+                                        transform="translate(-1675.025 -33)" fill="#000" />
+                                </svg>
+                            </div>
+                            <div class="header__search-button-wrapper">
+                                <button class="header__search-button btn" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </nav>
+    
+                    <div class="header__cart">
+                        <a class="header__cart-link link" href="#">CART</a>
+                        <span class="header__cart-count link">(1)</span>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <!-- <div class="header__container container-fluid">
+            <div class="header__row row">
+                <div class="header__logo col-3 logo col-xl-12 col-lg-12 col-md-12">
+                    <a class="header__link" href="#header-section">
+                        <img class="header__logo-img" src="./images/logo.png" alt="Monticello">
+                    </a>
+                </div>
+                <input class="menu__hidden" hidden type="checkbox" id="menuBtn">
+                <label class="menu__hidden_btn" aria-label="button menu" for="menuBtn">
+                    <span class="menu__hidden_btn-line"></span>
+                </label>
+                <nav class="header__menu menu col-7 col-xl-12 col-lg-12">
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a href="#header-section" class="menu__item-link">ABOUT US</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects" class="menu__item-link">PROJECTS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#news" class="menu__item-link">NEWS</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__item-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__social social col-xl-12 col-lg-12 col-2 col-md-12">
+                    <ul class="social__items social__items-header-burger-btn">
+                        <li class="social__item social__item-header-burger-btn">
+                            <a class="social__item-link social__item-link-header-burger-btn" href="#header-section">
+                                <svg class="social__item-svg" width="9px" height="16px" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item social__item-header-burger-btn">
+                            <a class="social__item-link social__item-link-header-burger-btn" href="#header-section">
+                                <svg class="social__item-svg" width="14px" height="15px" viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item social__item-header-burger-btn">
+                            <a class="social__item-link social__item-link-header-burger-btn" href="#header-section">
+                                <svg class="social__item-svg" width="14px" height="15px" viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </header>
+    <main class="main">
+        <!-- //= html_includes/_intro.html -->
+        <!-- //= html_includes/_header-section-simple.html -->
+        <!-- //= html_includes/_projects.html -->
+        <!-- //= html_includes/_news.html -->
+        <!-- //= html_includes/_gallery.html -->
+        <!-- //= html_includes/_map.html -->
+    </main>
+    <!-- //= html_includes/_footer.html -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
